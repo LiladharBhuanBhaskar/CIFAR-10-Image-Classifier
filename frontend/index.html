@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CIFAR-10 Image Classifier</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card">
+    <h1>CIFAR-10 Image Classifier</h1>
+
+    <label class="file-input">
+      <input type="file" id="imageInput" accept="image/*" onchange="previewImage()">
+      Choose Image
+    </label>
+
+    <div class="image-box">
+      <img id="preview" alt="Preview">
+    </div>
+
+    <button onclick="predict()">Predict</button>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
